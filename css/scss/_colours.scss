@@ -1,0 +1,20 @@
+$pallete1: (
+    1: rgb(255, 255, 255),
+    2: rgb(10, 10, 10),
+    3: rgb(148, 231, 93),
+);
+
+
+$gradients: (
+    1: rgba(0, 0, 0, 0.80)
+);
+
+
+@function cp1($color-name) {
+    @return map-get($pallete1, $color-name);
+}
+
+
+@function g($color-name) {
+    @return map-get($gradients, $color-name);
+}
