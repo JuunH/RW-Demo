@@ -1,0 +1,18 @@
+// Button base code
+%gridcenter {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+// Container
+.container {
+    @extend %gridcenter;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    p {
+        align-self: start;
+    }
+}

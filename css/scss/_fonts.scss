@@ -9,3 +9,24 @@ $fonts: (
 @function ff($ff) {
     @return map-get($fonts, $ff);
 }
+
+
+.text {
+    margin: 1rem;
+    height: max-content;
+}
+
+
+.heading {
+    margin: 2rem 1rem;
+}
+
+
+.dottedborder {
+    margin: 2rem;
+    padding: 1rem;
+    background: linear-gradient(0deg, g(2) 0%, g(2) 100%);
+    border-radius: 8px;
+    outline: dashed;
+    outline-color: cp1(3);
+}

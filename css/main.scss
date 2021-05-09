@@ -1,13 +1,16 @@
 // Import SCSS files
 @import 'scss/colours';
 @import 'scss/fonts';
+@import 'scss/displays';
+@import 'scss/elements';
 
-
+// All elements
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     font-family: ff(primary);
+    line-height: 1.5;
 }
 
 
@@ -57,37 +60,34 @@ nav {
     height: 100vh;
     background-image: linear-gradient(g(1), g(1)), url('/resources/rest-area.webp');
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.text {
-    margin: 1rem;
-}
 
-.button {
-    align-self: center;
-    margin: 1rem;
-    padding: 1rem;
-    text-decoration: none;
-    color: cp1(1);
-    font-weight: 600;
-    background-color: cp1(3);
-    border: solid;
-    border-color: cp1(3);
-    border-width: 2px;
-    border-radius: 12px;
-    transition: 250ms;
-    &:hover {
-        transform: scale(0.9);
+.footerlink {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    text-align: start;
+    li {
+        justify-self: start;
+        width: max-content;
+        list-style: none;
+    }
+    a {
+        color: cp1(1);
         text-decoration: underline;
     }
 }
 
-span {
-    color: cp1(3);
-}
 
-.card1 {
+footer {
     display: grid;
+    justify-items: center;
+    margin: 2rem;
+    a {
+        color: cp1(3);
+    }
 }
