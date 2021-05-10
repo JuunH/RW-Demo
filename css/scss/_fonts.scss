@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @use 'displays';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 
 $fonts: (
@@ -22,4 +22,5 @@ $fonts: (
 }
 .header {
     @extend %margin-headers;
+    max-width: 500px;
 }

@@ -104,6 +104,9 @@ nav {
     &.active {
         transform: translateX(0);
     }
+    li {
+        @extend %margin-1h;
+    }
 }
 
 
@@ -141,7 +144,7 @@ footer {
     @extend %fixedbg;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(g(1), g(1)), url('/resources/rest-area.webp');
+    background-image: linear-gradient(g(1), g(1)), url('../resources/rest-area.webp');
     h1 {
         @extend %margin-1f;
     }
@@ -150,6 +153,9 @@ footer {
     }
 }
 #credit {
+    @include tablet {
+        grid-column: 1 / span 2;
+    }
     @include desktop {
         grid-column: 1 / span 4;
     }
