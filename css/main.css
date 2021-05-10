@@ -27,10 +27,6 @@ footer, #menulist, .bgeffect1, .card-quote, .card1, .container-center {
   width: 100%;
 }
 
-.landing h4, .landing h1, footer #map, footer .social-icon, footer, nav #menuoption li, nav #menuicon, nav #logo, nav #name, .form input, address, .link-list, .button2, .button, .card1 h4, .card1 p, .card1, .text {
-  margin: 1rem;
-}
-
 .container-center, .container-start {
   margin: 1rem 0;
 }
@@ -54,90 +50,12 @@ footer, #menulist, .bgeffect1, .card-quote, .card1, .container-center {
   text-align: center;
 }
 
-footer, #menulist, .bgeffect1, .card-quote, .card1, .container-center {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-.container-start {
-  display: grid;
-  justify-items: center;
-  align-self: start;
-}
-
-.grid-adaptive {
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-}
-
-.landing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-center, .container-start {
-  width: 100%;
-}
-
 .landing h4, .landing h1, footer #map, footer .social-icon, footer, nav #menuoption li, nav #menuicon, nav #logo, nav #name, .form input, address, .link-list, .button2, .button, .card1 h4, .card1 p, .card1, .text {
   margin: 1rem;
 }
 
 .container-center, .container-start {
   margin: 1rem 0;
-}
-
-.header {
-  margin: 2rem 1rem;
-}
-
-.bgeffect1 h3, .button2, .button {
-  padding: 1rem;
-}
-
-footer, #menulist, .bgeffect1, .card-quote, .card1, .container-center {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-.container-start {
-  display: grid;
-  justify-items: center;
-  align-self: start;
-}
-
-.grid-adaptive {
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-}
-
-.landing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-center, .container-start {
-  width: 100%;
-}
-
-.landing h4, .landing h1, footer #map, footer .social-icon, footer, nav #menuoption li, nav #menuicon, nav #logo, nav #name, .form input, address, .link-list, .button2, .button, .card1 h4, .card1 p, .card1, .text {
-  margin: 1rem;
-}
-
-.container-center, .container-start {
-  margin: 1rem 0;
-}
-
-.header {
-  margin: 2rem 1rem;
-}
-
-.bgeffect1 h3, .button2, .button {
-  padding: 1rem;
 }
 
 .card1 {
