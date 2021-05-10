@@ -1,17 +1,62 @@
-// Grid display with centered elements
+// Display Queries
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+
+// Grid display
 %gridcenter {
     display: grid;
     justify-items: center;
     align-items: center;
 }
+%gridstart {
+    display: grid;
+    justify-items: center;
+    align-self: start;
+}
+.grid-adaptive {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr))
+}
+
+
+// Flex display
+%flexcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+%flexrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 // Container
-.container {
-    @extend %gridcenter;
+%container {
     @extend %margin-1h;
     width: 100%;
 }
+.container-center {
+    @extend %gridcenter;
+    @extend %container;
+}
+.container-start {
+    @extend %gridstart;
+    @extend %container;
+}
+
 
 
 // Margins

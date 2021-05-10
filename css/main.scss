@@ -12,6 +12,7 @@
     scroll-behavior: smooth;
     font-family: ff(primary);
     line-height: 1.5;
+    letter-spacing: 2px;
 }
 
 
@@ -27,13 +28,29 @@ body {
 // Navigation
 nav {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     justify-self: center;
     display: grid;
     grid-template-columns: auto 1fr;
     place-items: center;
     width: 100%;
     max-width: 800px;
+
+    @include tablet {
+        grid-template-columns: auto auto 1fr;
+    }
+
+    @include desktop {
+        max-width: 1440px;
+    }
+
+    #name {
+        @extend %margin-1f;
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
 
     #logo {
         @extend %margin-1f;
@@ -48,9 +65,44 @@ nav {
         filter: invert(100%);
         transition: 250ms;
 
+        @include desktop {
+            display: none;
+        }
+
         &.active {
             transform: rotate(180deg);
         }
+    }
+
+    #menuoption {
+        justify-self: end;
+        display: none;
+        li {
+            @extend %margin-1f;
+            display: inline;
+        }
+        @include desktop {
+            display: block;
+        }
+    }
+}
+#menulist {
+    @extend %gridcenter;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: cp1(3);
+    transition: 250ms;
+    font-size: 24px;
+    @include desktop {
+        display: none;
+    }
+    &.active {
+        transform: translateX(0);
     }
 }
 
@@ -58,6 +110,20 @@ nav {
 // Footer
 footer {
     @extend %gridcenter;
+    @extend %margin-1f;
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .social-icon {
+        @extend %margin-1f;
+        width: 50px;
+        filter: invert(100%);
+    }
+    #map {
+        @extend %margin-1f;
+        width: 60%;
+        border-radius: 16px;
+    }
 }
 .footerlink {
     display: grid;
@@ -68,10 +134,8 @@ footer {
 
 // Custom Elements
 .landing {
+    @extend %flexcenter;
     @extend %fixedbg;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(g(1), g(1)), url('/resources/rest-area.webp');
@@ -80,5 +144,10 @@ footer {
     }
     h4 {
         @extend %margin-1f;
+    }
+}
+#credit {
+    @include desktop {
+        grid-column: 1 / span 4;
     }
 }
