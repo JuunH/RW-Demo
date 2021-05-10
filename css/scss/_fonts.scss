@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import 'displays';
 
 
 $fonts: (
@@ -10,23 +11,14 @@ $fonts: (
     @return map-get($fonts, $ff);
 }
 
-
+// Text Styles
 .text {
-    margin: 1rem;
+    @extend %margin-1f;
     height: max-content;
 }
-
-
-.heading {
-    margin: 2rem 1rem;
+.center-text {
+    text-align: center;
 }
-
-
-.dottedborder {
-    margin: 2rem;
-    padding: 1rem;
-    background: linear-gradient(0deg, g(2) 0%, g(2) 100%);
-    border-radius: 8px;
-    outline: dashed;
-    outline-color: cp1(3);
+.header {
+    @extend %margin-headers;
 }

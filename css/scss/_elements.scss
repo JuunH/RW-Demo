@@ -1,8 +1,12 @@
+// Import SCSS
 @import 'displays';
+@import 'colours';
+
 
 // Card styles
 .card1 {
-    margin: 1rem 0;
+    @extend %gridcenter;
+    @extend %margin-1f;
     width: 300px;
     height: 485px;
     overflow: hidden;
@@ -11,23 +15,28 @@
     outline: dashed;
     outline-color: cp1(4);
     img {
-        margin-bottom: 2rem;
         width: 80%;
         height: 200px;
         border-radius: 8px;
         opacity: 0.9;
     }
-    p {
-        margin: 0 1rem;
+    h4, p {
+        @extend %margin-1f;
     }
+}
+.card-quote {
+    @extend %gridcenter;
+    width: 100%;
+    height: 200px;
+    text-align: center;
 }
 
 
 // Button styles
 %button {
+    @extend %margin-1f;
+    @extend %padding-1f;
     align-self: center;
-    margin: 1rem;
-    padding: 1rem;
     text-decoration: none;
     font-weight: 600;
     border: solid;
@@ -51,26 +60,60 @@
 }
 
 
+// Link styles
+.link-list {
+    @extend %margin-1f;
+    li {
+        list-style: none;
+    }
+}
+.link {
+    font-style: italic;
+    text-decoration: none;
+    color: cp1(3);
+}
+
+
 // Inline style
 span {
     color: cp1(3);
 }
 
+
 // Background Styles
-.bgeffect1 {
-    @extend %gridcenter;
-    width: 100%;
-    min-height: 500px;
+%fixedbg {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-.quote {
+.bgeffect1 {
     @extend %gridcenter;
+    @extend %fixedbg;
     width: 100%;
-    height: 250px;
-    text-align: center;
+    min-height: 500px;
+    h3 {
+        @extend %padding-1f;
+    }
+}
+
+
+// Border Styles
+.dottedborder {
+    background: linear-gradient(0deg, g(2) 0%, g(2) 100%);
+    border-radius: 8px;
+    outline: dashed;
+    outline-color: cp1(3);
+}
+
+
+// Address style
+address {
+    @extend %margin-1f;
+    a[href^="mailto"]::before {
+        content: "📧 ";
+    }
+    a[href^="tel"]::before {
+        content: "📞 ";
+    }
 }

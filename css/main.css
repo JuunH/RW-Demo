@@ -1,56 +1,94 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-.text {
+footer, .bgeffect1, .card-quote, .card1, .container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.landing h4, .landing h1, nav #menuicon, nav #logo, address, .link-list, .button2, .button, .card1 h4, .card1 p, .card1, .text {
   margin: 1rem;
+}
+
+.container {
+  margin: 1rem 0;
+}
+
+.header {
+  margin: 2rem 1rem;
+}
+
+.bgeffect1 h3, .button2, .button {
+  padding: 1rem;
+}
+
+.text {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
 
-.heading {
+.center-text {
+  text-align: center;
+}
+
+footer, .bgeffect1, .card-quote, .card1, .container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.landing h4, .landing h1, nav #menuicon, nav #logo, address, .link-list, .button2, .button, .card1 h4, .card1 p, .card1, .text {
+  margin: 1rem;
+}
+
+.container {
+  margin: 1rem 0;
+}
+
+.header {
   margin: 2rem 1rem;
 }
 
-.dottedborder {
-  margin: 2rem;
+.bgeffect1 h3, .button2, .button {
   padding: 1rem;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
-  border-radius: 8px;
-  outline: dashed;
-  outline-color: #e7845d;
 }
 
-.quote, .bgeffect1, .container {
+footer, .bgeffect1, .card-quote, .card1, .container {
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
 .container {
-  margin-top: 2rem;
   width: 100%;
-  text-align: center;
-}
-.container p {
-  align-self: start;
 }
 
-.quote, .bgeffect1, .container {
-  display: grid;
-  justify-items: center;
-  align-items: center;
+.landing h4, .landing h1, nav #menuicon, nav #logo, address, .link-list, .button2, .button, .card1 h4, .card1 p, .card1, .text {
+  margin: 1rem;
 }
 
 .container {
-  margin-top: 2rem;
-  width: 100%;
-  text-align: center;
+  margin: 1rem 0;
 }
-.container p {
-  align-self: start;
+
+.header {
+  margin: 2rem 1rem;
+}
+
+.bgeffect1 h3, .button2, .button {
+  padding: 1rem;
 }
 
 .card1 {
-  margin: 1rem 0;
   width: 300px;
   height: 485px;
   overflow: hidden;
@@ -60,20 +98,19 @@
   outline-color: #202020;
 }
 .card1 img {
-  margin-bottom: 2rem;
   width: 80%;
   height: 200px;
   border-radius: 8px;
   opacity: 0.9;
 }
-.card1 p {
-  margin: 0 1rem;
+.card-quote {
+  width: 100%;
+  height: 200px;
+  text-align: center;
 }
 
 .button2, .button {
   align-self: center;
-  margin: 1rem;
-  padding: 1rem;
   text-decoration: none;
   font-weight: 600;
   border: solid;
@@ -96,23 +133,43 @@
   color: #e7845d;
 }
 
+.link-list li {
+  list-style: none;
+}
+
+.link {
+  font-style: italic;
+  text-decoration: none;
+  color: #e7845d;
+}
+
 span {
   color: #e7845d;
 }
 
-.bgeffect1 {
-  width: 100%;
-  min-height: 500px;
+.landing, .bgeffect1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.quote {
+.bgeffect1 {
   width: 100%;
-  height: 250px;
-  text-align: center;
+  min-height: 500px;
+}
+.dottedborder {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
+  border-radius: 8px;
+  outline: dashed;
+  outline-color: #e7845d;
+}
+
+address a[href^=mailto]::before {
+  content: "📧 ";
+}
+address a[href^=tel]::before {
+  content: "📞 ";
 }
 
 * {
@@ -132,6 +189,7 @@ body {
 
 nav {
   position: fixed;
+  z-index: 1;
   justify-self: center;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -139,15 +197,11 @@ nav {
   width: 100%;
   max-width: 800px;
 }
-nav > * {
-  margin: 1rem;
-}
 nav #logo {
   height: 40px;
 }
 nav #menuicon {
   justify-self: end;
-  padding: 8px;
   width: 30px;
   cursor: pointer;
   filter: invert(100%);
@@ -157,6 +211,12 @@ nav #menuicon.active {
   transform: rotate(180deg);
 }
 
+.footerlink {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: start;
+}
+
 .landing {
   display: flex;
   flex-direction: column;
@@ -164,35 +224,4 @@ nav #menuicon.active {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/resources/rest-area.webp");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.footerlink {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 2rem;
-  text-align: start;
-}
-.footerlink li {
-  justify-self: start;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  list-style: none;
-}
-.footerlink a {
-  color: white;
-  text-decoration: underline;
-}
-
-footer {
-  display: grid;
-  justify-items: center;
-  margin: 2rem;
-}
-footer a {
-  color: #e7845d;
 }/*# sourceMappingURL=main.css.map */

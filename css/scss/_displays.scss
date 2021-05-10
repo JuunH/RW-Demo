@@ -1,4 +1,4 @@
-// Button base code
+// Grid display with centered elements
 %gridcenter {
     display: grid;
     justify-items: center;
@@ -9,10 +9,27 @@
 // Container
 .container {
     @extend %gridcenter;
-    margin-top: 2rem;
+    @extend %margin-1h;
     width: 100%;
-    text-align: center;
-    p {
-        align-self: start;
-    }
+}
+
+
+// Margins
+%margin-1f {
+    margin: 1rem;
+}
+%margin-2f {
+    margin: 2rem;
+}
+%margin-1h {
+    margin: 1rem 0;
+}
+%margin-headers {
+    margin: 2rem 1rem;
+}
+
+
+// Paddings
+%padding-1f {
+    padding: 1rem;
 }
