@@ -43,6 +43,14 @@ footer, #menulist, .bgeffect1, .card-quote, .card1, .container-center {
   padding: 1rem;
 }
 
+.form input[type=text], .form input[type=submit], .form input[type=reset], .link-nav {
+  padding: 0.5rem;
+}
+
+.link {
+  padding: 0 1rem;
+}
+
 .text {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -101,6 +109,14 @@ footer, #menulist, .bgeffect1, .card-quote, .card1, .container-center {
   padding: 1rem;
 }
 
+.form input[type=text], .form input[type=submit], .form input[type=reset], .link-nav {
+  padding: 0.5rem;
+}
+
+.link {
+  padding: 0 1rem;
+}
+
 footer, #menulist, .card1, .card-quote, .bgeffect1, .container-center {
   display: grid;
   justify-items: center;
@@ -142,6 +158,14 @@ footer, #menulist, .card1, .card-quote, .bgeffect1, .container-center {
 
 .button, .button2, .bgeffect1 h3 {
   padding: 1rem;
+}
+
+.link-nav, .form input[type=text], .form input[type=submit], .form input[type=reset] {
+  padding: 0.5rem;
+}
+
+.link {
+  padding: 0 1rem;
 }
 
 .card1 {
@@ -192,16 +216,33 @@ footer, #menulist, .card1, .card-quote, .bgeffect1, .container-center {
   list-style: none;
 }
 
+.link-nav, .link {
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 250ms;
+}
+.link-nav:hover, .link:hover, .link-nav:active, .link:active {
+  background-position: left;
+}
+
 .link {
   font-style: italic;
-  text-decoration: none;
   color: #e7845d;
+  background: linear-gradient(to left, #0a0a0a 50%, #e7845d 50%) right;
+  background-size: 200%;
+}
+.link:hover, .link:active {
+  color: white;
 }
 
 .link-nav {
-  text-decoration: none;
   color: white;
   font-weight: 700;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, white 50%) right;
+  background-size: 200%;
+}
+.link-nav:hover, .link-nav:active {
+  color: #0a0a0a;
 }
 
 span {
@@ -231,6 +272,13 @@ address a[href^=mailto]::before {
 }
 address a[href^=tel]::before {
   content: "📞 ";
+}
+
+.form input:focus {
+  background-color: #e7845d;
+}
+.form input[type=text], .form input[type=submit], .form input[type=reset] {
+  border-radius: 8px;
 }
 
 * {
