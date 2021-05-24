@@ -4,8 +4,6 @@
         @content;
     }
 }
-
-
 @mixin desktop {
     @media (min-width: 992px) {
         @content;
@@ -21,7 +19,7 @@
 }
 %gridstart {
     display: grid;
-    justify-items: center;
+    justify-items: start;
     align-self: start;
 }
 .grid-adaptive {
@@ -36,17 +34,14 @@
     justify-content: center;
     align-items: center;
 }
-%flexrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 // Container
 %container {
-    @extend %margin-1h;
     width: 100%;
+}
+%container-fit {
+    width: max-content;
 }
 .container-center {
     @extend %gridcenter;
@@ -55,6 +50,7 @@
 .container-start {
     @extend %gridstart;
     @extend %container;
+    @extend %margin-1h;
 }
 
 
@@ -72,6 +68,9 @@
 %margin-1h {
     margin: 1rem 0;
 }
+%margin-4w {
+    margin: 0 4rem;
+}
 %margin-headers {
     margin: 2rem 1rem;
 }
@@ -83,6 +82,9 @@
 }
 %padding-halff {
     padding: 0.5rem;
+}
+%padding-halfh {
+    padding: 0.5rem 0;
 }
 %padding-1w {
     padding: 0 1rem;

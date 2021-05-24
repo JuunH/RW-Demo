@@ -13,9 +13,9 @@
     transition: 1.25s;
     border-radius: 8px;
     outline: dashed;
-    outline-color: cp1(4);
+    outline-color: cp1(6);
     img {
-        width: 200px;
+        width: 250px;
         border-radius: 8px;
         opacity: 0.9;
     }
@@ -33,29 +33,23 @@
 
 // Button styles
 %button {
-    @extend %margin-1f;
     @extend %padding-1f;
     align-self: center;
+    background-image: linear-gradient(to left, cp1(4) 50%, cp1(3) 50%);
+    background-size: 200%;
     text-decoration: none;
-    font-weight: 600;
-    border: solid;
-    border-width: 2px;
-    border-radius: 12px;
+    font-weight: 800;
+    border-radius: 8px;
     transition: 250ms;
+    cursor: pointer;
     &:hover {
-        transform: scale(0.9);
-        text-decoration: underline;
+        color: cp1(1);
+        background-position: right;
     }
 }
 .button {
     @extend %button;
-    color: cp1(1);
-    background-color: cp1(3);
-    border-color: cp1(3);
-}
-.button2 {
-    @extend %button;
-    color: cp1(3);
+    color: cp1(2);
 }
 
 
@@ -70,31 +64,35 @@
     text-decoration: none;
     border-radius: 4px;
     transition: 250ms;
-    &:hover, &:active {
-        background-position: left;
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        font-size: 0;
+        background: cp1(3);
+        height: 2px;
+        transition: 250ms;
+    }
+    &:hover::after {
+        width: 100%;
     }
 }
 .link {
     @extend %link;
-    @extend %padding-1w;
-    font-style: italic;
-    color: cp1(3);
-    background: linear-gradient(to left, cp1(2) 50%, cp1(3) 50%) right;
-    background-size: 200%;
-    &:hover, &:active {
-        color: cp1(1);
-    }
+    @extend %padding-halfh;
 }
 .link-nav {
     @extend %link;
     @extend %padding-halff;
+    position: relative;
     color: cp1(1);
     font-weight: 700;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, cp1(1) 50%) right;
-    background-size: 200%;
-    &:hover, &:active {
-        color: cp1(2);
-    }
+    border-radius: 0;
+    transform: scale(1);
 }
 
 
@@ -111,48 +109,8 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.bgeffect1 {
-    @extend %gridcenter;
-    @extend %fixedbg;
-    width: 100%;
-    min-height: 500px;
-    h3 {
-        @extend %padding-1f;
-    }
-}
-
-
-// Border Styles
-.dottedborder {
-    background: linear-gradient(0deg, g(2) 0%, g(2) 100%);
-    border-radius: 8px;
-    outline: dashed;
-    outline-color: cp1(3);
-}
-
-
-// Address style
-address {
-    @extend %margin-1f;
-    a[href^="mailto"]::before {
-        content: "📧 ";
-    }
-    a[href^="tel"]::before {
-        content: "📞 ";
-    }
-}
-
-
-// Forms
-.form {
-    input {
-        @extend %margin-1f;
-        &:focus {
-            background-color: cp1(3)
-        }
-    }
-    input[type=text], input[type=submit], input[type=reset] {
-        @extend %padding-halff;
-        border-radius: 8px;
-    }
+%bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
