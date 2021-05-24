@@ -12,3 +12,19 @@ function toggleOptions() {
 menuicon.addEventListener('click', () => {
   toggleOptions()
 })
+
+
+// Bounce Animation control
+
+
+const arrow = document.getElementById('arrow');
+
+document.addEventListener('scroll', () => {
+  scrollposition = window.pageYOffset
+  if (scrollposition > 0) {
+    arrow.classList.add('invisible');
+  }
+  else {
+    arrow.classList.remove('invisible');
+  }
+})
