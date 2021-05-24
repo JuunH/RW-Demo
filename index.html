@@ -9,128 +9,95 @@
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="http://example.com/"/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="resources/noodlelogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
     <script src="js/scripts.js" defer></script>
-    <title>Restaurant Demo</title>
+    <title>Home</title>
 </head>
 <body>
-    <nav>
-        <h2 id="name">Restaurant</h2>
-        <a href="#"><img id="logo" src="resources/noodlelogo.png" alt="Logo"></a>
+    <nav id="banner">
+        <a href="#"><img id="logo" src="resources/logo.png" alt="Logo"></a>
         <img id="menuicon" src="resources/icons/Menu Icon.svg" alt="menu button">
         <ul id="menuoption" class="link-list">
             <li><a href="#" class="link-nav">Home</a></li>
             <li><a href="#" class="link-nav">Menu</a></li>
-            <li><a href="#" class="link-nav">Booking</a></li>
-            <li><a href="#" class="link-nav">Takeaways</a></li>
             <li><a href="#" class="link-nav">Offers</a></li>
-            <li><a href="#" class="link-nav">Find Us</a></li>
-        </ul> 
+            <li><a href="#" class="link-nav">About</a></li>
+        </ul>
+        <div class="button">Make an Order</div>
     </nav>
-    <div class="landing">
-        <h1 class="text center-text">Welcome to this <span>Restaurant</span></h1>
-        <h4 class="text center-text">Join the many that has experienced a journey through our dishes</h4>
-        <a href="#" class="button">Explore Menu</a>
-    </div>
-    <div class="container-center">
-        <h1 class="header center-text"><span>Cuisines</span> on another level.</h1>
-        <p class="text center-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloremque aspernatur sit sunt doloribus minus eum dignissimos.</p>
-        <a href="#" class="button2">Book a Table</a>
-    </div>
-    <div class="container-center">
-        <h1 class="header center-text"><span>Explore</span> our specialities</h1>
-        <div class="container-center grid-adaptive">
-            <div class="card1">
-                <h4 class="heading center-text">Dish 1</h4>
-                <img src="resources/noodles2.webp" alt="noodles">
-                <p class="center-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate minima nemo laboriosam neque eum exercitationem. Expedita eum ipsa ullam dolorum?</p>
-            </div>
-            <div class="card1">
-                <h4 class="heading center-text margin-1f">Dish 2</h4>
-                <img src="resources/noodles3.jpg" alt="noodles">
-                <p class="center-text margin-1f">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate minima nemo laboriosam neque eum exercitationem. Expedita eum ipsa ullam dolorum?</p>
-            </div>
-            <div class="card1">
-                <h4 class="heading center-text margin-1f">Dish 3</h4>
-                <img src="resources/noodles1.jpg" alt="noodles">
-                <p class="center-text margin-1f">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate minima nemo laboriosam neque eum exercitationem. Expedita eum ipsa ullam dolorum?</p>
-            </div>
-            <div class="card1">
-                <h4 class="heading center-text margin-1f">Dish 4</h4>
-                <img src="resources/noodles4.jpg" alt="noodles">
-                <p class="center-text margin-1f">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate minima nemo laboriosam neque eum exercitationem. Expedita eum ipsa ullam dolorum?</p>
+    <main>
+        <div class="landing">
+            <h1>Switch up your style</h1>
+            <div class="button">Make an Order</div>
+            <img id="arrow" src="resources/icons/arrow.svg" alt="Arrow Pointer">
+            <div>
+                <img src="resources/uber-eats-logo.png" alt="Uber Eats">
+                <img src="resources/justeat/JustEat_RBG_Badge_House.png" alt="Uber Eats">
             </div>
         </div>
-    </div>
-    <div class="container-center">
-        <div class="bgeffect1" style="background-image: url('resources/noodledemo.webp');">
-            <h3 class="text center-text dottedborder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quos.</h3>
+        <div class="container-center content">
+            <div class="container-center content-child" onclick="location.href='#'">
+                <div id="bg-menu" class="content-bg"></div>
+                <h1>Menu</h1>
+            </div>
         </div>
-        <div class="quote card-quote">
-            <h2 class="text">Insert persuading line</h2>
+        <div class="container-center content dual">
+            <div class="container-center content-child" onclick="location.href='#'">
+                <div id="bg-partners" class="content-bg"></div>
+                <h1>Partners</h1>
+            </div>
+            <div class="container-center content-child" onclick="location.href='#'">
+                <div id="bg-about" class="content-bg"></div>
+                <h1>About Us</h1>
+            </div>
         </div>
-        <div class="bgeffect1" style="background-image: url('resources/noodledemo2.jpg');">
-            <h3 class="text center-text dottedborder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quos.</h3>
-        </div>
-    </div>
+    </main>
     <div id="menulist">
         <ul id="menuoption" class="link-list">
-            <li><a href="#" class="link-nav">Home</a></li>
-            <li><a href="#" class="link-nav">Menu</a></li>
-            <li><a href="#" class="link-nav">Booking</a></li>
-            <li><a href="#" class="link-nav">Takeaways</a></li>
-            <li><a href="#" class="link-nav">Offers</a></li>
-            <li><a href="#" class="link-nav">Find Us</a></li>
+            <li><a href="#" class="link-nav ">Home</a></li>
+            <li><a href="#" class="link-nav ">Menu</a></li>
+            <li><a href="#" class="link-nav ">Offers</a></li>
+            <li><a href="#" class="link-nav ">About</a></li>
         </ul> 
     </div>
     <footer>
+        <div class="container-start sus">
+            <h2>Start Up Sushi</h2>
+            <p>Start Up Sushi <br><span>All Rights Reserved</span></p>
+            <p>Website designed and created by <br><span>Nicholas Ho</span></p>
+        </div>
         <div class="container-start">
-            <h2 class="header center-text">Restaurant Name <span>©</span></h2>
-            <address>
-                    <a href="mailto:restaurant@example.com" class="link">restaurant@example.com</a><br>
-                    <a href="tel:07123456789" class="link">07123456789</a>
-            </address>
-            <ul class="footerlink link-list">
-                    <li><a href="#" class="link">Home</a></li>
-                    <li><a href="#" class="link">Menu</a></li>
-                    <li><a href="#" class="link">Booking</a></li>
-                    <li><a href="#" class="link">Takeaways</a></li>
-                    <li><a href="#" class="link">Offers</a></li>
-                    <li><a href="#" class="link">Find Us</a></li> 
+            <h2>Links:</h2>
+            <ul>
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">Menu</a></li>
+                <li><a href="#" class="link">Offers</a></li>
+                <li><a href="#" class="link">About</a></li>
+                <li><a href="#" class="link">Partners</a></li>
+                <li><a href="#" class="link">Careers</a></li>
+            </ul> 
+        </div>
+        <div class="container-start">
+            <h2>Operating Times:</h2>
+            <ul>
+                <li>
+                    Mon - Sat <br> 12:00 - 20:00
+                </li>
+                <li>
+                    Sun <br> 12:00 - 21:00
+                </li>
             </ul>
         </div>
         <div class="container-start">
-            <h2 class="header center-text">Find Us Here</h2>
-            <address>
-                123 Road <br>
-                Town <br>
-                City <br>
-                LE1 1AB 
-            </address>
-        </div>
-        <div class="container-start">
-            <h2 class="header center-text">Follow us on our Social Media</h2>
-            <div>
-                <img src="resources/icons/instagram.svg" alt="instagram" class="social-icon">
-                <img src="resources/icons/discord.svg" alt="discord" class="social-icon">
-                <img src="resources/icons/github icon.svg" alt="github" class="social-icon">
-            </div>
-        </div>
-        <div class="container-start">
-            <h2 class="header center-text">Send us a message</h2>
-            <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form">
-                Name:<br>
-                <input type="text" name="name"><br>
-                E-mail:<br>
-                <input type="text" name="mail"><br>
-                Message:<br>
-                <input type="text" name="message" rows='40'><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
-            </form>
-        </div>
-        <div id="credit" class="container-center">
-            <h4 class="center-text header">Designed and Created by <br><a href="#" class="link"><span>Nicholas Ho</span></a></h4>
+            <h2>Contact Us:</h2>
+            <ul>
+                <li>
+                    <a href="telto:07123456789" class="link">07123456789</a>
+                </li>
+                <li>
+                    <a href="mailto:example@gmail.com" class="link">example@gmail.com</a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
