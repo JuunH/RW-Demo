@@ -9,8 +9,6 @@
     @extend %margin-2f;
     width: 300px;
     height: 485px;
-    overflow: hidden;
-    transition: 1.25s;
     border-radius: 8px;
     outline: dashed;
     outline-color: cp1(6);
@@ -19,8 +17,11 @@
         border-radius: 8px;
         opacity: 0.9;
     }
-    h4, p {
+    h4 {
         @extend %margin-1f;
+    }
+    p {
+        @extend %margin-1w;
     }
 }
 
@@ -85,8 +86,6 @@
     position: relative;
     color: cp1(1);
     font-weight: 700;
-    border-radius: 0;
-    transform: scale(1);
 }
 
 

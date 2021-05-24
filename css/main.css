@@ -16,7 +16,7 @@ footer, .container-start {
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 
-.landing {
+.landing, .flexcenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,7 @@ footer, .container-start {
   width: 100%;
 }
 
-.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4, .card1 p, .text {
+.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4 {
   margin: 1rem;
 }
 
@@ -37,6 +37,10 @@ footer, .container-start {
 
 footer ul li, #menulist li, nav #logo, .container-start {
   margin: 1rem 0;
+}
+
+.card1 p {
+  margin: 0 1rem;
 }
 
 .header {
@@ -53,17 +57,6 @@ footer, .button {
 
 .link {
   padding: 0.5rem 0;
-}
-
-.text {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  max-width: 500px;
-}
-
-.center-text {
-  text-align: center;
 }
 
 .header {
@@ -86,7 +79,7 @@ footer, .container-start {
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 
-.landing {
+.landing, .flexcenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,7 +90,7 @@ footer, .container-start {
   width: 100%;
 }
 
-.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4, .card1 p, .text {
+.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4 {
   margin: 1rem;
 }
 
@@ -107,6 +100,10 @@ footer, .container-start {
 
 footer ul li, #menulist li, nav #logo, .container-start {
   margin: 1rem 0;
+}
+
+.card1 p {
+  margin: 0 1rem;
 }
 
 .header {
@@ -141,7 +138,7 @@ footer, .container-start {
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 
-.landing {
+.landing, .flexcenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +149,7 @@ footer, .container-start {
   width: 100%;
 }
 
-.landing img, .landing h1, nav #menuoption li, nav #menuicon, .text, .card1 h4, .card1 p, .link-list {
+.landing img, .landing h1, nav #menuoption li, nav #menuicon, .card1 h4, .link-list {
   margin: 1rem;
 }
 
@@ -162,6 +159,10 @@ footer, .container-start {
 
 footer ul li, #menulist li, nav #logo, .container-start {
   margin: 1rem 0;
+}
+
+.card1 p {
+  margin: 0 1rem;
 }
 
 .header {
@@ -183,8 +184,6 @@ footer, .button {
 .card1 {
   width: 300px;
   height: 485px;
-  overflow: hidden;
-  transition: 1.25s;
   border-radius: 8px;
   outline: dashed;
   outline-color: #d8d8d8;
@@ -243,8 +242,6 @@ footer, .button {
   position: relative;
   color: #0a0a0a;
   font-weight: 700;
-  border-radius: 0;
-  transform: scale(1);
 }
 
 span {
@@ -313,8 +310,6 @@ nav {
 }
 nav #logo {
   height: 60px;
-  background-color: #ffffff;
-  border-radius: 0 0 8px 8px;
 }
 nav #menuicon {
   justify-self: end;
@@ -329,9 +324,6 @@ nav #menuicon {
 }
 nav #menuicon.active {
   transform: rotate(180deg);
-}
-nav #menuicon.scrolling {
-  filter: none;
 }
 nav #menuoption {
   justify-self: center;
@@ -401,12 +393,6 @@ footer p {
 }
 footer .sus {
   height: 200px;
-}
-
-#logo-footer {
-  margin-top: 2rem;
-  align-self: start;
-  width: 200px;
 }
 
 .landing {

@@ -44,8 +44,6 @@ nav {
     #logo {
         @extend %margin-1h;
         height: 60px;
-        background-color: cp1(2);
-        border-radius: 0 0 8px 8px;
     }
 
     #menuicon {
@@ -61,10 +59,6 @@ nav {
 
         &.active {
             transform: rotate(180deg);
-        }
-
-        &.scrolling {
-            filter: none;
         }
     }
 
@@ -140,11 +134,6 @@ footer {
     .sus {
         height: 200px;
     }
-}
-#logo-footer {
-    margin-top: 2rem;
-    align-self: start;
-    width: 200px
 }
 
 

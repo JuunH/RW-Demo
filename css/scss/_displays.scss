@@ -34,14 +34,13 @@
     justify-content: center;
     align-items: center;
 }
-
+.flexcenter {
+    @extend %flexcenter;
+}
 
 // Container
 %container {
     width: 100%;
-}
-%container-fit {
-    width: max-content;
 }
 .container-center {
     @extend %gridcenter;
@@ -59,17 +58,14 @@
 %margin-1f {
     margin: 1rem;
 }
-%margin-halff {
-    margin: 0.5rem;
-}
 %margin-2f {
     margin: 2rem;
 }
 %margin-1h {
     margin: 1rem 0;
 }
-%margin-4w {
-    margin: 0 4rem;
+%margin-1w {
+    margin: 0 1rem;
 }
 %margin-headers {
     margin: 2rem 1rem;
@@ -85,7 +81,4 @@
 }
 %padding-halfh {
     padding: 0.5rem 0;
-}
-%padding-1w {
-    padding: 0 1rem;
 }
