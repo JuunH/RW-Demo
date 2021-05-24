@@ -84,7 +84,7 @@ nav {
         display: none;
         text-align: center;
         @include desktop {
-            display: flex;
+            display: block;
         }
     }
 }
@@ -116,6 +116,7 @@ nav {
 footer {
     @extend %gridstart;
     @extend %padding-1f;
+    background-color: cp1(6);
     @include tablet {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -137,7 +138,7 @@ footer {
         font-weight: 500;
     }
     .sus {
-        height: 100%;
+        height: 200px;
     }
 }
 #logo-footer {
@@ -164,6 +165,7 @@ footer {
     h1 {
         @extend %margin-1f;
         color: cp1(2);
+        text-align: center;
         font-size: 60px;
     }
 

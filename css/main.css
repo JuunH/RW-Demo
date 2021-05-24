@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap");
-#menulist, nav, .card-quote, .card1, .container-center {
+#menulist, nav, .card1, .container-center {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -27,8 +27,12 @@ footer, .container-start {
   width: 100%;
 }
 
-.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4, .card1 p, .card1, .text {
+.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4, .card1 p, .text {
   margin: 1rem;
+}
+
+.card1 {
+  margin: 2rem;
 }
 
 footer ul li, #menulist li, nav #logo, .container-start {
@@ -66,7 +70,7 @@ footer, .button {
   max-width: 500px;
 }
 
-#menulist, nav, .card-quote, .card1, .container-center {
+#menulist, nav, .card1, .container-center {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -93,8 +97,12 @@ footer, .container-start {
   width: 100%;
 }
 
-.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4, .card1 p, .card1, .text {
+.landing img, .landing h1, nav #menuoption li, nav #menuicon, .link-list, .card1 h4, .card1 p, .text {
   margin: 1rem;
+}
+
+.card1 {
+  margin: 2rem;
 }
 
 footer ul li, #menulist li, nav #logo, .container-start {
@@ -117,7 +125,7 @@ footer, .button {
   padding: 0.5rem 0;
 }
 
-#menulist, nav, .card1, .card-quote, .container-center {
+#menulist, nav, .card1, .container-center {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -144,8 +152,12 @@ footer, .container-start {
   width: 100%;
 }
 
-.landing img, .landing h1, nav #menuoption li, nav #menuicon, .text, .card1, .card1 h4, .card1 p, .link-list {
+.landing img, .landing h1, nav #menuoption li, nav #menuicon, .text, .card1 h4, .card1 p, .link-list {
   margin: 1rem;
+}
+
+.card1 {
+  margin: 2rem;
 }
 
 footer ul li, #menulist li, nav #logo, .container-start {
@@ -175,19 +187,13 @@ footer, .button {
   transition: 1.25s;
   border-radius: 8px;
   outline: dashed;
-  outline-color: #969696;
+  outline-color: #d8d8d8;
 }
 .card1 img {
   width: 250px;
   border-radius: 8px;
   opacity: 0.9;
 }
-.card-quote {
-  width: 100%;
-  height: 200px;
-  text-align: center;
-}
-
 .button {
   align-self: center;
   background-image: linear-gradient(to left, #FAA44F 50%, #D0271B 50%);
@@ -345,7 +351,7 @@ nav #orderCTA {
 }
 @media (min-width: 992px) {
   nav #orderCTA {
-    display: flex;
+    display: block;
   }
 }
 
@@ -369,6 +375,9 @@ nav #orderCTA {
 #menulist.active {
   transform: translateX(0);
 }
+footer {
+  background-color: #d8d8d8;
+}
 @media (min-width: 600px) {
   footer {
     grid-template-columns: repeat(2, 1fr);
@@ -391,7 +400,7 @@ footer p {
   font-weight: 500;
 }
 footer .sus {
-  height: 100%;
+  height: 200px;
 }
 
 #logo-footer {
@@ -414,6 +423,7 @@ footer .sus {
 }
 .landing h1 {
   color: #ffffff;
+  text-align: center;
   font-size: 60px;
 }
 .landing img {
@@ -464,10 +474,10 @@ footer .sus {
   transform: scale(1.1);
 }
 .content .content-child #bg-menu {
-  background-image: linear-gradient(to bottom, rgba(197, 139, 81, 0.65), rgba(197, 139, 81, 0.65)), url("../resources/sushiland.webp");
+  background-image: linear-gradient(to bottom, rgba(197, 139, 81, 0.425), rgba(197, 139, 81, 0.425)), url("../resources/sushiland.webp");
 }
 .content .content-child #bg-partners {
-  background-image: linear-gradient(to bottom, rgba(90, 102, 71, 0.65), rgba(90, 102, 71, 0.65)), url("../resources/sushiland3.webp");
+  background-image: linear-gradient(to bottom, rgba(88, 99, 70, 0.562), rgba(88, 99, 70, 0.562)), url("../resources/sushiland3.webp");
 }
 .content .content-child #bg-about {
   background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.65), rgba(128, 128, 128, 0.65)), url("../resources/sushiland4.jpg");

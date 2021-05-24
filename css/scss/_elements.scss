@@ -6,7 +6,7 @@
 // Card styles
 .card1 {
     @extend %gridcenter;
-    @extend %margin-1f;
+    @extend %margin-2f;
     width: 300px;
     height: 485px;
     overflow: hidden;
@@ -22,12 +22,6 @@
     h4, p {
         @extend %margin-1f;
     }
-}
-.card-quote {
-    @extend %gridcenter;
-    width: 100%;
-    height: 200px;
-    text-align: center;
 }
 
 
